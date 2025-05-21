@@ -11,7 +11,6 @@ import { Button } from "@/components/ui/button";
 export default function Home() {
   return (
     <div>
-      <NavbarDemo/> 
       {/* <SpotlightPreview/> */}
       <div className="pb-30" >
         <HeroHighlightDemo/>

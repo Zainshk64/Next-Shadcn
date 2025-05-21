@@ -17,11 +17,11 @@ import { Button } from "@/components/ui/button";
 import { ModeToggle } from "./ModeToggle";
 
 export function NavbarDemo() {
-  const {theme, setTheme} = useTheme();
+  const { theme, setTheme } = useTheme();
   const navItems = [
     {
       name: "Features",
-      link: "#features",
+      link: "/feature",
     },
     {
       name: "Pricing",
@@ -43,12 +43,8 @@ export function NavbarDemo() {
           <NavbarLogo />
           <NavItems items={navItems} />
           <div className="flex items-center gap-4">
-            {/* <Button variant="ghost" size="icon" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            {theme === "dark" ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
-          </Button> */}
-          
-          {/* <ModeToggle/> */}
-          <NavbarButton variant="secondary"><ModeToggle/></NavbarButton>
+            {/* <ModeToggle/> */}
+            <NavbarButton variant="secondary"><ModeToggle /></NavbarButton>
             <NavbarButton variant="secondary">Login</NavbarButton>
             <NavbarButton variant="primary">Book a call</NavbarButton>
           </div>

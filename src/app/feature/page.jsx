@@ -1,0 +1,16 @@
+import { DraggableCardDemo } from '@/components/DraggableCard'
+import { FeaturesSection2 } from '@/components/Feature2'
+import { FeaturesSectionDemo } from '@/components/FeaturesSectionDemo'
+import React from 'react'
+
+export default function page() {
+  return (
+    <div>
+        <div className='py-30' >
+            <FeaturesSectionDemo/>
+            <FeaturesSection2/>
+        <DraggableCardDemo/>
+        </div>
+    </div>
+  )
+}

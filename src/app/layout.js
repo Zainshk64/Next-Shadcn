@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "next-themes";
+import { NavbarDemo } from "@/components/Navbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className="">
          <ThemeProvider
             attribute="class"
@@ -27,6 +28,8 @@ export default function RootLayout({ children }) {
             enableSystem
             disableTransitionOnChange
           >
+      <NavbarDemo/> 
+            
             {children}
           </ThemeProvider>
       </body>
